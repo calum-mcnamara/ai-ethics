@@ -404,10 +404,14 @@ tbody tr:hover {
 }
 
 .project-prompt {
-  margin-bottom: 0;
+  margin: 0 0 1.25em;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1.08rem;
   line-height: 1.82;
+}
+
+.project-prompt:last-child {
+  margin-bottom: 0;
 }
 
 footer {
