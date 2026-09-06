@@ -56,7 +56,7 @@ a {
 
 .site-header {
   position: relative;
-  min-height: 700px;
+  min-height: 600px;
   overflow: hidden;
   color: white;
   background:
@@ -80,7 +80,7 @@ a {
 
 .nav {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -129,9 +129,15 @@ a {
 }
 
 .hero {
-  position: relative;
+  position: absolute;
+  inset: 0;
   z-index: 1;
-  padding-block: 110px 125px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0;
+  text-align: left;
 }
 
 .eyebrow {
@@ -162,7 +168,7 @@ h2 {
 
 h1 {
   max-width: 980px;
-  margin-bottom: 27px;
+  margin-bottom: 0;
   font-size: clamp(3.25rem, 7vw, 6.8rem);
   line-height: 0.98;
 }
@@ -423,7 +429,7 @@ footer {
 
 @media (max-width: 800px) {
   .site-header {
-    min-height: 620px;
+    min-height: 540px;
   }
 
   .nav-links {
@@ -432,10 +438,6 @@ footer {
 
   .nav-links a {
     font-size: 0.72rem;
-  }
-
-  .hero {
-    padding-block: 85px 100px;
   }
 
   .section {
