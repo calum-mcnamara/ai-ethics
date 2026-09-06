@@ -361,6 +361,11 @@ td:nth-child(3) {
   width: 250px;
 }
 
+th:nth-child(5),
+td:nth-child(5) {
+  width: 180px;
+}
+
 tbody tr:last-child td {
   border-bottom: 0;
 }
@@ -427,6 +432,28 @@ tbody tr:hover {
 
 .materials-list a:hover,
 .materials-list a:focus-visible {
+  text-decoration-color: currentColor;
+}
+
+.resource-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.resource-links a {
+  color: var(--blue);
+  font-size: 0.84rem;
+  font-weight: 700;
+  text-decoration-color: rgba(52, 84, 110, 0.35);
+  text-underline-offset: 3px;
+}
+
+.resource-links a:hover,
+.resource-links a:focus-visible {
   text-decoration-color: currentColor;
 }
 
