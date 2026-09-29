@@ -207,6 +207,72 @@ h3 {
   scroll-margin-top: 20px;
 }
 
+.team-section {
+  padding-block: 72px;
+  border-bottom: 1px solid var(--line);
+}
+
+.team-section .section-heading {
+  margin-bottom: 32px;
+}
+
+.team-section h2 {
+  font-size: clamp(1.8rem, 3vw, 2.75rem);
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 42px 64px;
+}
+
+.team-member {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.team-photo-link {
+  display: block;
+  flex: 0 0 auto;
+  border-radius: 50%;
+}
+
+.team-photo {
+  display: block;
+  width: 104px;
+  height: 104px;
+  object-fit: cover;
+  border: 3px solid var(--paper);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px var(--line);
+}
+
+.team-member h3 {
+  margin-bottom: 3px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.22rem;
+  font-weight: 400;
+}
+
+.team-member h3 a {
+  text-decoration: none;
+}
+
+.team-member h3 a:hover,
+.team-member h3 a:focus-visible {
+  color: var(--crimson);
+}
+
+.team-member p {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .section-heading {
   margin-bottom: 48px;
 }
@@ -532,6 +598,10 @@ footer {
     padding-block: 75px;
   }
 
+  .team-section {
+    padding-block: 58px;
+  }
+
   .course-grid,
   .coursework-grid {
     grid-template-columns: 1fr;
@@ -562,6 +632,15 @@ footer {
 
   .section-heading {
     margin-bottom: 42px;
+  }
+
+  .team-member {
+    gap: 16px;
+  }
+
+  .team-photo {
+    width: 88px;
+    height: 88px;
   }
 
   .table-wrap {
