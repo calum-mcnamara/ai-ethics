@@ -230,6 +230,7 @@ h3 {
   display: flex;
   gap: 20px;
   align-items: center;
+  min-width: 220px;
 }
 
 .team-photo-link {
@@ -246,6 +247,18 @@ h3 {
   border: 3px solid var(--paper);
   border-radius: 50%;
   box-shadow: 0 0 0 1px var(--line);
+}
+
+.team-photo-placeholder {
+  display: grid;
+  place-items: center;
+  border-color: #ebe7df;
+  color: #8a857e;
+  background: #ebe7df;
+  box-shadow: 0 0 0 1px #d4cec4;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
 }
 
 .team-member h3 {
